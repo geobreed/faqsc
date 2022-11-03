@@ -1,5 +1,14 @@
 ---
 layout: default
-title: Home
+title: Faqs
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<h1>Latest Faqs</h1>
+
+<ul>
+  {% for faq in site.faqs %}
+    <li>
+      <h2><a href="{{ faq.url }}">{{ faq.title }}</a></h2>
+      {{ faq.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
