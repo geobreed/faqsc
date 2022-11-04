@@ -1,28 +1,14 @@
-title: zettelnotes
-name: My linked zettel notebook
-user_description: This is my zettelnotes
-notes_url: "https://zettelnotes.netlify.app"
+title: FAQ SC
+name: temporary proof of concept
+user_description: This is to show how search can improve efficiency
+notes_url: "https://faqsc.netlify.app"
 profile_pic: /assets/img/profile.png
 favicon: /assets/img/favicon.png
 copyright_name: MIT
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://zettelnotes.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://faqsc.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
 
 # Build settings
-theme: null
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-toc
-
-markdown: kramdown
-
-kramdown:
-  input: GFM
-  hard_wrap: false
-  math_engine: null
-  smart_quotes: ["apos", "apos", "quot", "quot"]
-  syntax_highlighter: rouge
-
-
+collections:
+  authors:
