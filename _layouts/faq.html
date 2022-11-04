@@ -4,9 +4,9 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p>
   {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'name', page.author %}
-  {% if author %}
-    - i23 <a href="{{ author.url }}">{{ author.name }}</a>
+  {% assign SC = site.authors | where: 'name', page.author %}
+  {% if SC %}
+    - i3323 <a href="{{ SC.url }}">{{ SC.name }}</a>
   {% endif %}
 </p>
 
