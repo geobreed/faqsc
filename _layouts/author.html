@@ -8,7 +8,7 @@ layout: default
 
 <h2>Posts</h2>
 <ul>
-  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+  {% assign filtered_posts = site.posts | where: 'author', page.initial %}
   {% for faq in filtered_posts %}
     <li><a href="{{ faq.url }}">{{ faq.title }}</a></li>
   {% endfor %}
