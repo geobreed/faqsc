@@ -12,3 +12,4 @@ encoding: utf-8
 # Build settings
 collections:
   authors:
+    output: true
