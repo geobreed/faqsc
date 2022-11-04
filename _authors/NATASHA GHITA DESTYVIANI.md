@@ -1,0 +1,6 @@
+---
+initial: NGD
+name: NATASHA GHITA DESTYVIANI
+position: SC
+---
+NATASHA GHITA DESTYVIANI adalah SC
