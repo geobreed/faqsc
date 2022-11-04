@@ -6,7 +6,7 @@ layout: default
   {{ page.date | date_to_string }}
   {% assign SC = site.authors | where: 'name', page.author %}
   {% if SC %}
-    - i3323 <a href="{{ SC.url }}">{{ SC.name }}</a>
+    - i3323 - <a href="{{ SC.url }}">{{ SC.name }}</a>
   {% endif %}
 </p>
 
