@@ -22,9 +22,9 @@ defaults:
       layout: "author"
   - scope:
       path: ""
-      type: "posts"
+      type: "faqs"
     values:
-      layout: "post"
+      layout: "faq"
   - scope:
       path: ""
     values:
