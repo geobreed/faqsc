@@ -4,7 +4,7 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p>
   {{ page.date | date_to_string }}
-  {% assign SC = site.authors | where: 'name', page.author %}
+  {% assign SC = site.authors | where: 'link', page.author | replace: " ", "-" %}
   {% if SC %}
     - i3323 - <a href="{{ SC.url }}">{{ SC.name }}</a> lkb
   {% endif %}
