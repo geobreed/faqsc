@@ -19,7 +19,7 @@ defaults:
       path: ""
       type: "authors"
     values:
-      layout: "author"
+      layout: "SC"
   - scope:
       path: ""
       type: "posts"
