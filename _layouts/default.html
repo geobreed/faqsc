@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-	<link rel="stylesheet" href="/assets/css/styles.css">
+	<meta charset="utf-8">
+    
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="{{ site.name }}" property="og:site_name"/>
+    <meta content="{{ site.user_description }}" property="og:description">
+    <meta content="{{ site.url }}/about/" property="article:author">
+
+
+    {%- if page.title -%}
+    <meta content="{{ page.title }}" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    {%- else -%}
+    <meta content="website" property="og:type">
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    {%- endif -%}
+
+    <title>{{site.title}}</title>
+
+    <link rel="canonical" href="{{site.url}}{{page.url}}"/>
+    <link rel="apple-touch-icon" href="{{site.profile_pic}}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+
+    <link rel="icon" href="{{site.favicon}}" type="image/png" sizes="16x16"/>
+    <link href="/assets/css/style.css" rel="stylesheet" media="all" class="default"/>
+
+    <!--[if IE]>
+        <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+
 	{% feed_meta %}
     {% seo %}
   </head>
