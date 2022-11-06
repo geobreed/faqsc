@@ -1,8 +1,12 @@
 - name: Home
   link: /
+  clasz: home-p
 - name: About
   link: /about.html
+  clasz: home-p
 - name: Faq
   link: /faqs.html
+  clasz: categories-p
 - name: SC
   link: /SC.html
+  clasz: categories-p
