@@ -1,12 +1,16 @@
 - name: Home
   link: /
   clasz: home-p
+  clasd: home
 - name: About
   link: /about.html
   clasz: home-p
+  clasd: home
 - name: Faq
   link: /faqs.html
   clasz: categories-p
+  clasd: categories
 - name: SC
   link: /SC.html
   clasz: categories-p
+  clasd: categories
