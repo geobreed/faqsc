@@ -39,12 +39,13 @@
 
     
     <title>{{ page.title }}</title>
-<!--	<link rel="stylesheet" href="/assets/css/styles.css" media="all" class="default"/-->
+	<link rel="stylesheet" href="/assets/css/styles.css" media="all" class="default"/-->
 	{% feed_meta %}
     {% seo %}
   </head>
   <body>
 	{% include navigation.html %}
     {{ content }}
+	{% include navigation.html %}
   </body>
 </html>
