@@ -50,7 +50,7 @@
 
 
 
-				{%- assign content_array = {{ content }} | split:'[[' -%}
+				{%- assign content_array = content | split:'[[' -%}
 				{%- assign external_link_delimiter = '::' -%}
 				{%- assign internal_link_delimiter = '|' -%}
 				{%- assign internal_header_delimiter = '#' -%}
@@ -127,7 +127,7 @@
 				{%- assign external_url_array = external_urls | split:link_joiner_delimiter -%}
 				{%- assign external_link_array = external_links | split:link_joiner_delimiter -%}
 
-				{%- assign replaced_content = {{ content }} -%}
+				{%- assign replaced_content = content -%}
 
 				{%- for title in internal_link_array -%}
 
