@@ -1,6 +1,5 @@
 ---
-initial: FF
-name: FATHDITYA FALAQI
+name: FF
 position: SC
 ---
-FATHDITYA FALAQI adalah SC
+FF adalah SC
