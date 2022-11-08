@@ -1,6 +1,5 @@
 ---
-initial: FF
-name: RIZKI SAFARI
+name: RS
 position: SC
 ---
 RIZKI SAFARI adalah SC
