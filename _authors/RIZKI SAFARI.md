@@ -2,4 +2,4 @@
 name: RS
 position: SC
 ---
-RIZKI SAFARI adalah SC
+RS adalah SC
