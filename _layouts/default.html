@@ -49,7 +49,7 @@
 				{%- include navigation.html -%}
 				{%- include 0feed.html -%}
 				<main>
-					<div class="content">
+					<!--<div class="content">
 					
 
 
@@ -74,7 +74,7 @@
 								{%- assign internal_link = itempart[0] -%}
 
     <!-- We need some hacky code to isolate header link -->
-								{%- assign header_link_sub_i = start[0] | split: "|" -%}
+<!--								{%- assign header_link_sub_i = start[0] | split: "|" -%}
 								{%- assign header_link_sub_ii = header_link_sub_i[0] | split: "#" -%}
 								{%- assign header_link = header_link_sub_ii[1] -%}
 
@@ -300,7 +300,8 @@
 
 						{{ replaced_content }}
 
-					</div>
+					</div>-->
+					{%- include 0content.html -%}
 					{%- include 0backlinks.html -%}
 					{%- include 0related.html -%}
 				</main>
