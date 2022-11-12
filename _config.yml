@@ -28,8 +28,11 @@ kramdown:
 
 
 collections:
-  authors:
-    output: true
+    authors:
+        output: true
+    notes:
+      output: true
+      permalink: /notes/:title
     
 defaults:
   - scope:
