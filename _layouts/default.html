@@ -374,27 +374,22 @@
 
     <div class="container">
         <div class = "box">
-<!--            {%- include header.html -%}-->
+            {%- include header.html -%}
             {%- include feed.html -%}
 
             {%- if page.content-type == "notes"
                 or page.content-type == "post"
                 or page.content-type == "eg" -%}
--->
             <main>
-<!--
                 <h1>{{page.title}}</h1>
                 {%- include content.html -%}
                 <hr>
                 {%- include backlinks.html -%}
                 {%- include related.html -%}
--->
             </main>
-<!--
             {%- endif -%}
             {%- include comments.html -%}
             {%- include footer.html -%}
--->
         </div>
         <button class="scroll-to-top" id="scroll-to-top"><i class="fa fa-chevron-up"></i></button>
     </div>
@@ -404,20 +399,17 @@
             window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         });
     </script>
-<!--
     {%- include contextmenu.html -%}
--->
 </body>
 
 
 
 </html>
 
-<!--
 {%- if page.content-type == "notes"
 or page.content-type == "post" -%}
 {%- if page.title != "Tags" -%}
 <script>for(let h of document.querySelectorAll('h2[id],h3[id],h4[id]'))h.innerHTML+=` <a href="#${h.id}" aria-hidden="true">#</a>`</script>
 {%- endif -%}
 {%- endif -%}
--->
+
