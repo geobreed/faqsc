@@ -1,6 +1,3 @@
----
----
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -46,10 +43,9 @@
 		<div class="container">
 
 			<div class = "box">
-				{%- include navigation.html -%}
-				{%- include 0feed.html -%}
+				{% include navigation.html %}
 				<main>
-					<!--<div class="content">
+					<div class="content">
 					
 
 
@@ -74,7 +70,7 @@
 								{%- assign internal_link = itempart[0] -%}
 
     <!-- We need some hacky code to isolate header link -->
-<!--								{%- assign header_link_sub_i = start[0] | split: "|" -%}
+								{%- assign header_link_sub_i = start[0] | split: "|" -%}
 								{%- assign header_link_sub_ii = header_link_sub_i[0] | split: "#" -%}
 								{%- assign header_link = header_link_sub_ii[1] -%}
 
@@ -300,13 +296,9 @@
 
 						{{ replaced_content }}
 
-					</div>-->
-					{%- include 0content.html -%}
-					{%- include 0backlinks.html -%}
-					{%- include 0related.html -%}
+					</div>
+					
 				</main>
-				{%- include 0comments.html -%}
-				{%- include 0footer.html -%}
 			</div>
 			<button class="scroll-to-top" id="scroll-to-top"><i class="fa fa-chevron-up"></i></button>
 		</div>
@@ -315,30 +307,29 @@
 				window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
 			});
 		</script>
-		{%- include 0contextmenu.html -%}
-<!--		{%- if page.permalink == "/" or page.permalink == "/notes" -%}
-		<nav class="context-menu" id="context-menu">
-			<ul class="context-menu__items">
-			  <li class="context-menu__item">
-					<a href="#" class="context-menu__link" data-action="backlinks">
-					  View Linked References
-					</a>
-			  </li>
-			  <li class="context-menu__item">
-					<a href="#" class="context-menu__link" data-action="related-posts">
-					  View Related Posts
-					</a>
-			  </li>
-			  <li class="context-menu__item">
-				<a href="#" class="context-menu__link" data-action="new-tab">
-				  Open in new tab
-				</a>
-			  </li>
-			</ul>
-		</nav>
-		<nav class="context-menu-res" id="context-menu-res">
-		</nav>
-		<script src="/assets/js/contextmenu.js"></script>
-		{%- endif -%}-->
 	</body>
+	{%- if page.permalink == "/" or page.permalink == "/notes" -%}
+	<nav class="context-menu" id="context-menu">
+		<ul class="context-menu__items">
+		  <li class="context-menu__item">
+				<a href="#" class="context-menu__link" data-action="backlinks">
+				  View Linked References
+				</a>
+		  </li>
+		  <li class="context-menu__item">
+				<a href="#" class="context-menu__link" data-action="related-posts">
+				  View Related Posts
+				</a>
+		  </li>
+		  <li class="context-menu__item">
+			<a href="#" class="context-menu__link" data-action="new-tab">
+			  Open in new tab
+			</a>
+		  </li>
+		</ul>
+	</nav>
+	<nav class="context-menu-res" id="context-menu-res">
+	</nav>
+	<script src="/assets/js/contextmenu.js"></script>
+	{%- endif -%}
 </html>
