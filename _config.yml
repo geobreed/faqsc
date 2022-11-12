@@ -1,15 +1,14 @@
-title: Frequently Ask Question - SC
-name: Temporary Proof of Concept
-user_description: to show how advance search can improve efficiency
-notes_url: "https://faqsc.netlify.app"
+title: zettelnotes
+name: My linked zettel notebook
+user_description: This is my zettelnotes
+notes_url: "https://zettelnotes.netlify.app"
 profile_pic: /assets/img/profile.png
 favicon: /assets/img/favicon.png
 copyright_name: MIT
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://faqsc.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://zettelnotes.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
 
-# Build settings
 # Build settings
 theme: null
 plugins:
@@ -27,25 +26,28 @@ kramdown:
   syntax_highlighter: rouge
 
 
+sass:
+  style: compressed
+
 collections:
-    authors:
-        output: true
     notes:
       output: true
       permalink: /notes/:title
-    
+
+toc:
+  max_level: 3
+
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: posts
     values:
-      layout: "author"
+      layout: post
+      permalink: /posts/:title
+      content-type: post
   - scope:
       path: ""
-      type: "posts"
+      type: notes
     values:
-      layout: "faq"
-  - scope:
-      path: ""
-    values:
-      layout: "post"
+      layout: post
+      content-type: notes
