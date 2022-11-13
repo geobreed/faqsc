@@ -49,9 +49,6 @@
             {%- include header.html -%}
             {%- include feed.html -%}
 
-            {%- if page.content-type == "notes"
-                or page.content-type == "post"
-                or page.content-type == "eg" -%}
             <main>
                 <h1>{{page.title}}</h1>
                 {%- include content.html -%}
