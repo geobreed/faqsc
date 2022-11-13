@@ -36,8 +36,10 @@ defaults:
       type: "authors"
     values:
       layout: "author"
+      content-type: post
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "faq"
+      content-type: post
