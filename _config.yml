@@ -60,6 +60,5 @@ defaults:
       layout: "author"
   - scope:
       path: ""
-      type: "posts"
     values:
       layout: "default"
