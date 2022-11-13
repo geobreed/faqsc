@@ -1,12 +1,12 @@
-title: zettelnotes
-name: My linked zettel notebook
-user_description: This is my zettelnotes
-notes_url: "https://zettelnotes.netlify.app"
+title: Frequently Ask Question - SC
+name: Temporary Proof of Concept
+user_description: to show how advance search can improve efficiency
+notes_url: "https://faqsc.netlify.app"
 profile_pic: /assets/img/profile.png
 favicon: /assets/img/favicon.png
 copyright_name: MIT
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://zettelnotes.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://faqsc.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
 
 # Build settings
@@ -33,6 +33,8 @@ collections:
     notes:
       output: true
       permalink: /notes/:title
+    authors:
+      output: true
 
 toc:
   max_level: 3
@@ -42,7 +44,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: default
+      layout: faq
       permalink: /posts/:title
       content-type: post
   - scope:
@@ -51,3 +53,8 @@ defaults:
     values:
       layout: default
       content-type: notes
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
