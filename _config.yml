@@ -26,38 +26,21 @@ kramdown:
   syntax_highlighter: rouge
 
 
-sass:
-  style: compressed
-
 collections:
-    notes:
-      output: true
-      permalink: /notes/:title
-    authors:
-      output: true
-
-toc:
-  max_level: 3
-
+  authors:
+    output: true
+    
 defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "faq"
-      permalink: /posts/:title
-      content-type: post
-  - scope:
-      path: ""
-      type: "notes"
-    values:
-      layout: "default"
-      content-type: notes
   - scope:
       path: ""
       type: "authors"
     values:
       layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "faq"
   - scope:
       path: ""
     values:
