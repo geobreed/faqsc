@@ -42,16 +42,16 @@ toc:
 defaults:
   - scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: faq
+      layout: "faq"
       permalink: /posts/:title
       content-type: post
   - scope:
       path: ""
-      type: notes
+      type: "notes"
     values:
-      layout: default
+      layout: "default"
       content-type: notes
   - scope:
       path: ""
