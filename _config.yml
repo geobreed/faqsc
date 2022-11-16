@@ -41,4 +41,5 @@ defaults:
       type: "posts"
     values:
       layout: "faq"
+      permalink: /posts/:title
       content-type: post
