@@ -44,3 +44,7 @@ defaults:
       type: "posts"
     values:
       layout: "faq"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
