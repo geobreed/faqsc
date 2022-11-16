@@ -41,3 +41,4 @@ defaults:
       type: "posts"
     values:
       layout: "faq"
+      content-type: post
