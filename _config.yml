@@ -48,7 +48,7 @@ defaults:
 page_gen-dirs: true
 
 page_gen:
-- data: '20k10'
+- data: 'coba'
   template: 'faq'
   dir: 'posts'
   index_files: true
