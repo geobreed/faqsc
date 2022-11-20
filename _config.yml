@@ -56,5 +56,6 @@ page_gen:
     template: 'entry'
     name: 'Index'
     dir: 'faq'
+    extension: 'md'
     
     
