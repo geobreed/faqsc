@@ -48,7 +48,7 @@ defaults:
 page_gen-dirs: true # uncomment, if you prefer to generate named folders
 
 page_gen:
-  - data: 'members'
+  - data: 'memberscsv'
     template: 'profile'
     name: 'full_name'
     dir: 'people'
