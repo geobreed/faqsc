@@ -5,9 +5,9 @@ layout: default
 <h1>Latest Faqs</h1>
 
 <ul>
-  {% for faq in site.posts %}
+  {% for faq in site.data.coba %}
     <li>
-      <h2><a href="{{ faq.url }}">{{ faq.title }}</a></h2>
+      <h2><a href="{{ faq.Index | datapage_url: 'faq' }}">{{faq.Index}}</a></h2>
       {{ faq.excerpt }}
     </li>
   {% endfor %}
