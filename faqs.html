@@ -7,7 +7,7 @@ layout: default
 <ul>
   {% for faq in site.data.coba %}
     <li>
-      <h2><a href="{{ faq.Index | datapage_url: 'Index' }}">{{faq.Index}}</a></h2>
+      <h2><a href="{{ faq.Index | datapage_url: 'faq' }}">{{faq.Index}}</a></h2>
       {{ faq.excerpt }}
     </li>
   {% endfor %}
