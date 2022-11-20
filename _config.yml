@@ -44,3 +44,11 @@ defaults:
       type: "posts"
     values:
       layout: "faq"
+
+page_gen-dirs: true # uncomment, if you prefer to generate named folders
+
+page_gen:
+  - data: 'coba'
+    template: 'faq'
+    name: 'Index'
+    dir: 'faq'
