@@ -53,7 +53,7 @@ page_gen:
     name: 'full_name'
     dir: 'people'
   - data: 'coba'
-    template: 'faq'
+    template: 'entry'
     name: 'Index'
     dir: 'faq'
     
