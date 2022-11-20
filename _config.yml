@@ -45,3 +45,13 @@ defaults:
     values:
       layout: "faq"
       
+page_gen-dirs: true
+
+page_gen:
+- data: '20k10'
+  template: 'faq'
+  dir: 'posts'
+  index_files: true
+  name_expr: record['Tanggal'] + "-" + record['Index']
+  title_expr: record['Tanggal'] + "-" + record['Index']
+  debug: true
