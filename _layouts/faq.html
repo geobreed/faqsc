@@ -2,10 +2,6 @@
 layout: default
 ---
 
-<h4>{{ page.Index }} - {{ page.Tanggal }}</h4>
+<h4>{{ page.title }} - {{ page.date | date_to_string }}</h4>
 
-<p>{{ page.Pertanyaan }}</p>
-
-<hr>
-
-<p>{{ page.Jawaban }}</p>
+{{ content }}
