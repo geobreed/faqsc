@@ -52,3 +52,9 @@ page_gen:
     template: 'profile'
     name: 'full_name'
     dir: 'people'
+  - data: 'coba'
+    template: 'faq'
+    name: 'Index'
+    dir: 'faq'
+    
+    
