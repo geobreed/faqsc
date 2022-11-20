@@ -1,0 +1,14 @@
+---
+title: Faqs
+layout: default
+---
+<h1>Latest Faqs</h1>
+
+<ul>
+  {% for faq in site.posts %}
+    <li>
+      <h2><a href="{{ faq.url }}">{{ faq.title }}</a></h2>
+      {{ faq.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
