@@ -1,16 +1,16 @@
 ---
 layout: faq
-title: {{ page.Index }}
-date: {{ page.Tanggal }}
-category: {{ page.Kategori }}
-tags: {{ page.Tema }}
-author: {{ page.Editor }}
+title: {{ page.Index | markdownify }}
+date: {{ page.Tanggal | markdownify }}
+category: {{ page.Kategori | markdownify }}
+tags: {{ page.Tema | markdownify }}
+author: {{ page.Editor | markdownify }}
 ---
 
-{{ page.Pertanyaan }}
+{{ page.Pertanyaan | markdownify }}
 
 ---
 
-{{ page.Jawaban }}
+{{ page.Jawaban | markdownify }}
 
-``{{ page.Editor }}``
+``{{ page.Editor | markdownify }}``
