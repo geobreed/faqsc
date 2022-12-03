@@ -44,18 +44,4 @@ defaults:
       type: "posts"
     values:
       layout: "faq"
-
-page_gen-dirs: true # uncomment, if you prefer to generate named folders
-
-page_gen:
-  - data: 'memberscsv'
-    template: 'profile'
-    name: 'full_name'
-    dir: 'people'
-  - data: 'coba'
-    template: 'entry'
-    name: 'Index'
-    dir: 'faq'
-    extension: 'md'
-    
-    
+      
